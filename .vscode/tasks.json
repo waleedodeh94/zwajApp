@@ -9,7 +9,28 @@
                 "build",
                 "${workspaceFolder}/ZwajApp.API/ZawjApp.API.csproj"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/ZwajApp.API/ZawjApp.API.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/ZwajApp.API/ZawjApp.API.csproj"
+            ],
+            "problemMatcher": "$tsc"
         }
     ]
 }
